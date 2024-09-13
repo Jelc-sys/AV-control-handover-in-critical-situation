@@ -11,13 +11,19 @@ public class SpriteHMI : HMI
     Sprite stop;
 	[SerializeField]
 	Sprite walk;
-	[SerializeField]
+    [SerializeField]
+    Sprite av;
+    [SerializeField]
+    Sprite av2;
+    [SerializeField]
 	Sprite disabled;
 
 	public override void Display(HMIState state)
     {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/sounds/automobile-horn-153260.wav");
         base.Display(state);
         Sprite spr = null;
+        spr = av;
         switch (state)
         {
             case HMIState.STOP:
@@ -25,6 +31,15 @@ public class SpriteHMI : HMI
                 break;
             case HMIState.WALK:
                 spr = walk;
+                break;
+            case HMIState.AV:
+                spr = av2;
+                break;
+            case HMIState.HORN:
+                player.Play();
+                break;
+            case HMIState.CB_MODE:
+
                 break;
             default:
                 spr = disabled;

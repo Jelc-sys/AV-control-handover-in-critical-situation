@@ -13,6 +13,7 @@ public enum HMISlot
     Hood,
     Top,
     Windshield,
+    Windshield_top,
 }
 
 // stores Transform state for every "bone" of an Avatar
@@ -251,6 +252,9 @@ public class PlayerAvatar : MonoBehaviour
         public Transform Windshield;
         [NonSerialized]
         public HMI WindshieldHMI;
+        public Transform Windshield_top;
+        [NonSerialized]
+        public HMI WindshieldHMI_top;
 
         HMI Spawn(HMI prefab, ref HMI instance, Transform parent)
         {
@@ -277,6 +281,8 @@ public class PlayerAvatar : MonoBehaviour
                     return Spawn(prefab, ref TopHMI, Top);
                 case HMISlot.Windshield:
                     return Spawn(prefab, ref WindshieldHMI, Windshield);
+                case HMISlot.Windshield_top:
+                    return Spawn(prefab, ref WindshieldHMI_top, Windshield_top);
             }
         }
     }

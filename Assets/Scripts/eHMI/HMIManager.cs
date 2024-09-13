@@ -8,6 +8,9 @@ public enum HMIState
     DISABLED,
     STOP,
     WALK,
+    AV,
+    HORN,
+    CB_MODE,
 }
 
 //script that synchronizes hmi state between all players
