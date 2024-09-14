@@ -49,9 +49,12 @@ MonoBehaviour:
   _renderer: {fileID: 2863568381179415621}
   stop: {fileID: 21300000, guid: 79398f3e77e8eaf47bde3f13eb4d9b24, type: 3}
   walk: {fileID: 21300000, guid: f372c74ca12e0b048ad591c24bd99deb, type: 3}
-  av: {fileID: 21300000, guid: ac21beaad7327ad42ae297ff19588af1, type: 3}
-  av2: {fileID: 0}
   disabled: {fileID: 21300000, guid: ccef1623427baf14aafcfad907d54068, type: 3}
+  _avatar: {fileID: 0}
+  _manager: {fileID: 0}
+  dash_disp: {fileID: 7454103401243466367, guid: e325a065254e48645b0ad61ac3973542,
+    type: 3}
+  postProcessVolume: {fileID: 0}
 --- !u!1 &8092115618871650734
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +133,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.42, y: 0.56}
+  m_Size: {x: 0.6, y: 0.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

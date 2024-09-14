@@ -5,6 +5,7 @@ using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
 using System.Threading;
+using UnityEditor.SceneManagement;
 
 //simple sprite swapping implementation of HMI base class
 public class SpriteHMI : HMI
@@ -18,17 +19,21 @@ public class SpriteHMI : HMI
     [SerializeField]
 	Sprite disabled;
 
-    public string postProcessObjectName = "PostProcess";
+    [SerializeField]
+    public GameObject dashWarning; //Added to find the dash warning sprite added to the drivable Smart Car
     public PostProcessVolume postProcessVolume; // To store the Post-process Volume component
     private bool isPostProcessEnabled = false;
 
     public override void Display(HMIState state)
     {
         System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/sounds/automobile-horn-153260.wav");
+        dashWarning = GameObject.Find("Dash_Warning"); //Assigning Dash_Warning object with the code
+        SpriteRenderer spriteRenderer = dashWarning.GetComponent<SpriteRenderer>(); //Finds SpriteRenderer in the Dash_Warning
         base.Display(state);
         Sprite spr = null;
         GameObject postProcessObject = GameObject.Find("PostProcess");
         postProcessVolume = postProcessObject.GetComponent<PostProcessVolume>();
+
         switch (state)
         {
             case HMIState.STOP:
@@ -41,9 +46,8 @@ public class SpriteHMI : HMI
                 player.Play();
                 break;
             case HMIState.CB_MODE:
-                //isPostProcessEnabled = !isPostProcessEnabled;
-                //postProcessVolume.enabled = isPostProcessEnabled;
                 StartCoroutine(FlashCoroutine());
+                spriteRenderer.enabled = !spriteRenderer.enabled; //Enables or disables warning lamp
                 break;
             default:
                 spr = disabled;

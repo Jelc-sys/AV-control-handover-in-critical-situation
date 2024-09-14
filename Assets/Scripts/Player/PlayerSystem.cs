@@ -153,9 +153,9 @@ public class PlayerSystem : MonoBehaviour
         {
             _hmiManager.AddHMI(avatar.HMISlots.Spawn(HMISlot.Windshield, role.WindshieldHMI));
         }
-        if (role.WindshieldHMI_top != null)
+        if (role.DashboardHMI != null)
         {
-            _hmiManager.AddHMI(avatar.HMISlots.Spawn(HMISlot.Windshield_top, role.WindshieldHMI_top));
+            _hmiManager.AddHMI(avatar.HMISlots.Spawn(HMISlot.Dashboard, role.DashboardHMI));
         }
         return avatar;
     }

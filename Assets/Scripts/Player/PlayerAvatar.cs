@@ -13,7 +13,7 @@ public enum HMISlot
     Hood,
     Top,
     Windshield,
-    Windshield_top,
+    Dashboard,
 }
 
 // stores Transform state for every "bone" of an Avatar
@@ -100,7 +100,7 @@ public class PlayerAvatar : MonoBehaviour
     [Header("Audio")]
     public EngineSoundManager Internal;
     public EngineSoundManager External;
-
+    
     [Serializable]
     public struct ModeElements
     {
@@ -252,9 +252,9 @@ public class PlayerAvatar : MonoBehaviour
         public Transform Windshield;
         [NonSerialized]
         public HMI WindshieldHMI;
-        public Transform Windshield_top;
+        public Transform Dashboard;
         [NonSerialized]
-        public HMI WindshieldHMI_top;
+        public HMI DashboardHMI;
 
         HMI Spawn(HMI prefab, ref HMI instance, Transform parent)
         {
@@ -281,8 +281,8 @@ public class PlayerAvatar : MonoBehaviour
                     return Spawn(prefab, ref TopHMI, Top);
                 case HMISlot.Windshield:
                     return Spawn(prefab, ref WindshieldHMI, Windshield);
-                case HMISlot.Windshield_top:
-                    return Spawn(prefab, ref WindshieldHMI_top, Windshield_top);
+                case HMISlot.Dashboard:
+                    return Spawn(prefab, ref DashboardHMI, Dashboard);
             }
         }
     }

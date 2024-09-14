@@ -10,11 +10,13 @@ public enum HMIState
     WALK,
     HORN,
     CB_MODE,
+    DASH,
 }
 
 //script that synchronizes hmi state between all players
 public class HMIManager : MonoBehaviour
 {
+    public static HMIManager Instance { get; private set; }
     List<HMI> _hmis = new List<HMI>();
     bool _isHost;
     UNetHost _host;

@@ -30,7 +30,7 @@ public struct ExperimentRoleDefinition
     //for Passenger agent, fields define which HMI prefab to spawn on indicated spots
     public HMI TopHMI;
     public HMI WindshieldHMI;
-    public HMI WindshieldHMI_top;
+    public HMI DashboardHMI;
     public HMI HoodHMI;
 
     //indicates car prefab that will be spawned for this role. Selected prefab is the one on the indicated index on PlayerSystem component lists 
