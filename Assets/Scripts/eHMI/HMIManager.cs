@@ -8,7 +8,6 @@ public enum HMIState
     DISABLED,
     STOP,
     WALK,
-    AV,
     HORN,
     CB_MODE,
 }
