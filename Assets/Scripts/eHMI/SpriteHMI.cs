@@ -21,6 +21,7 @@ public class SpriteHMI : HMI
 
     [SerializeField]
     public GameObject dashWarning; //Added to find the dash warning sprite added to the drivable Smart Car
+    public GameObject reactionTimeTracker; //added to track reaction time on key press
     public PostProcessVolume postProcessVolume; // To store the Post-process Volume component
     private bool isPostProcessEnabled = false;
 
@@ -28,7 +29,9 @@ public class SpriteHMI : HMI
     {
         System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/sounds/automobile-horn-153260.wav");
         dashWarning = GameObject.Find("Dash_Warning"); //Assigning Dash_Warning object with the code
+        reactionTimeTracker = GameObject.Find("ReactionTimeTracker");
         SpriteRenderer spriteRenderer = dashWarning.GetComponent<SpriteRenderer>(); //Finds SpriteRenderer in the Dash_Warning
+        ReactionTimeTracker reactionScript = reactionTimeTracker.GetComponent<ReactionTimeTracker>();
         base.Display(state);
         Sprite spr = null;
         GameObject postProcessObject = GameObject.Find("PostProcess");
@@ -48,6 +51,7 @@ public class SpriteHMI : HMI
             case HMIState.CB_MODE:
                 StartCoroutine(FlashCoroutine());
                 spriteRenderer.enabled = !spriteRenderer.enabled; //Enables or disables warning lamp
+                reactionScript.StartTimer("Strobe flash");
                 break;
             default:
                 spr = disabled;
