@@ -5,7 +5,7 @@ using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
 using System.Threading;
-using UnityEditor.SceneManagement;
+//using UnityEditor.SceneManagement;
 
 //simple sprite swapping implementation of HMI base class
 public class SpriteHMI : HMI
