@@ -47,6 +47,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentState: 5
   _renderer_Dash: {fileID: 2863568381179415621}
+  disp5: {fileID: 21300000, guid: 7931d8c91d99b4f459e2333977a31891, type: 3}
+  disp4: {fileID: 21300000, guid: 58fe03904f51d1d44b98a0af9652101a, type: 3}
+  disp3: {fileID: 21300000, guid: cb1f6e6d7a37b084ca155e9ade3c4e0e, type: 3}
+  disp2: {fileID: 21300000, guid: 0299b5aa2b7139c4491d8485931fb754, type: 3}
+  disp1: {fileID: 21300000, guid: f8c5d6c172baaa048a7602b448ed2025, type: 3}
   dash: {fileID: 21300000, guid: 545a397498184be40a3bcaa810253068, type: 3}
   disabled: {fileID: 0}
 --- !u!1 &8092115618871650734
