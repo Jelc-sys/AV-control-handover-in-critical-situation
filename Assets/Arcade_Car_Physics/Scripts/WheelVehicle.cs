@@ -22,6 +22,10 @@ namespace VehicleBehaviour {
     [RequireComponent(typeof(Rigidbody))]
     public class WheelVehicle : MonoBehaviour, IVehicle {
         public PlayerAvatar playerAvatar;
+        public GameObject FRWheel;
+        public GameObject FLWheel;
+        public GameObject BRWheel;
+        public GameObject BLWheel;
         [Header("Inputs")]
     #if MULTIOSCONTROLS
         [SerializeField] PlayerNumber playerId;
@@ -204,6 +208,17 @@ namespace VehicleBehaviour {
             }
 
 		    boost = maxBoost;
+
+            //Here setting wheel damping to correct value for sure
+            WheelCollider frontLeftCollider = FRWheel.GetComponent<WheelCollider>();
+            WheelCollider frontRightCollider = FLWheel.GetComponent<WheelCollider>();
+            WheelCollider rearLeftCollider = BRWheel.GetComponent<WheelCollider>();
+            WheelCollider rearRightCollider = BLWheel.GetComponent<WheelCollider>();
+
+            frontLeftCollider.wheelDampingRate = 0.25f;
+            frontRightCollider.wheelDampingRate = 0.25f;
+            rearLeftCollider.wheelDampingRate = 0.25f;
+            rearRightCollider.wheelDampingRate = 0.25f;
 
             _rb = GetComponent<Rigidbody>();
             spawnPosition = transform.position;

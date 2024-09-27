@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 2980969265823883411}
   - component: {fileID: 6214040643236662428}
   - component: {fileID: 8812417634353776199}
+  - component: {fileID: 6572364029829718409}
   m_Layer: 5
   m_Name: WP7
   m_TagString: WP
@@ -292,6 +293,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &6572364029829718409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347554377648128217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1d72ed7ab50204b9e30fdc60ecb2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 1787876385652902, guid: 1baf460ab026f1247ab4696be569ffae, type: 3}
 --- !u!1 &1407012411489170591
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1012,7 @@ GameObject:
   - component: {fileID: 1006282605009764861}
   - component: {fileID: 4037793589989318157}
   - component: {fileID: 5381445116670314387}
+  - component: {fileID: 8493600865120462927}
   m_Layer: 5
   m_Name: WP13
   m_TagString: WP
@@ -1066,7 +1081,21 @@ MonoBehaviour:
   brakingAcceleration: 0
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
-  customBehaviourData: []
+  customBehaviourData:
+  - {fileID: 0}
+--- !u!114 &8493600865120462927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5597209167454210445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1d72ed7ab50204b9e30fdc60ecb2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &5805787797847303217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1546,8 @@ MonoBehaviour:
     TopHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0, type: 3}
     WindshieldHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0,
       type: 3}
-    DashboardHMI: {fileID: 0}
+    DashboardHMI: {fileID: 7454103401243466367, guid: e325a065254e48645b0ad61ac3973542,
+      type: 3}
     HoodHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0,
       type: 3}
     carIdx: 1
@@ -1540,6 +1570,22 @@ MonoBehaviour:
       CameraIndex: 0
       VehicleType: 0
     AutonomousPath: {fileID: 0}
+    AutonomousIsYielding: 0
+  - Name: Automated - Driver
+    TopHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0, type: 3}
+    WindshieldHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0,
+      type: 3}
+    DashboardHMI: {fileID: 7454103401243466367, guid: e325a065254e48645b0ad61ac3973542,
+      type: 3}
+    HoodHMI: {fileID: 114674626593462642, guid: 9eaaf159fd53e9043a6a0f42f3729fa0,
+      type: 3}
+    carIdx: 1
+    SpawnPoint:
+      Point: {fileID: 1311683245}
+      Type: 2
+      CameraIndex: 0
+      VehicleType: 1
+    AutonomousPath: {fileID: 8043761391078894673}
     AutonomousIsYielding: 0
   PointsOfInterest: []
   CarSpawners:

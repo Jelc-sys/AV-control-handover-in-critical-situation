@@ -28,6 +28,8 @@ public class SpriteHMI_DASH : HMI
 	Sprite disabled;
 
     public GameObject reactionTimeTracker;
+    public GameObject carAI;      //To switch to MDV
+    private SwitchFromAItoMDV switchToMDVScript;
 
     public override async void Display(HMIState state)
     {
@@ -62,6 +64,8 @@ public class SpriteHMI_DASH : HMI
                 _renderer_Dash.sprite = spr;
                 await WaitForSecondsAsync(2f);
                 spr = dash;
+                switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();
+                switchToMDVScript.makeSwitch();
                 break;
             default:
                 spr = disabled;

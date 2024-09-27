@@ -11,6 +11,7 @@ public enum HMIState
     HORN,
     CB_MODE,
     DASH,
+    MDV,
 }
 
 //script that synchronizes hmi state between all players

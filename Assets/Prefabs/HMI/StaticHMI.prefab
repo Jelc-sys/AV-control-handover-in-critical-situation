@@ -50,11 +50,10 @@ MonoBehaviour:
   stop: {fileID: 21300000, guid: 79398f3e77e8eaf47bde3f13eb4d9b24, type: 3}
   walk: {fileID: 21300000, guid: f372c74ca12e0b048ad591c24bd99deb, type: 3}
   disabled: {fileID: 21300000, guid: ccef1623427baf14aafcfad907d54068, type: 3}
-  _avatar: {fileID: 0}
-  _manager: {fileID: 0}
-  dash_disp: {fileID: 7454103401243466367, guid: e325a065254e48645b0ad61ac3973542,
-    type: 3}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
   postProcessVolume: {fileID: 0}
+  carAI: {fileID: 1787876385652902, guid: ebd3970cf96c84fdb90d5b8e3e55ddbc, type: 3}
 --- !u!1 &8092115618871650734
 GameObject:
   m_ObjectHideFlags: 0

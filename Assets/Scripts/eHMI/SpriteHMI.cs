@@ -24,6 +24,8 @@ public class SpriteHMI : HMI
     public GameObject reactionTimeTracker; //added to track reaction time on key press
     public PostProcessVolume postProcessVolume; // To store the Post-process Volume component
     private bool isPostProcessEnabled = false;
+    public GameObject carAI;      //To switch to MDV
+    private SwitchFromAItoMDV switchToMDVScript;
 
     public override void Display(HMIState state)
     {
@@ -52,6 +54,10 @@ public class SpriteHMI : HMI
                 StartCoroutine(FlashCoroutine());
                 spriteRenderer.enabled = !spriteRenderer.enabled; //Enables or disables warning lamp
                 reactionScript.StartTimer("Strobe flash");
+                break;
+            case HMIState.MDV:
+                switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();
+                switchToMDVScript.makeSwitch();
                 break;
             default:
                 spr = disabled;

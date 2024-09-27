@@ -1318,6 +1318,7 @@ GameObject:
   - component: {fileID: 4224836170552726509}
   - component: {fileID: 8118022126883589177}
   - component: {fileID: 1806115740961270626}
+  - component: {fileID: 704650633978897101}
   m_Layer: 9
   m_Name: DrivableSmartCommon
   m_TagString: ManualCar
@@ -1396,6 +1397,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAvatar: {fileID: 8938021727904404209}
+  FRWheel: {fileID: 2233151292397704232}
+  FLWheel: {fileID: 2465501146693319750}
+  BRWheel: {fileID: 2590204308891513981}
+  BLWheel: {fileID: 8414590981672045758}
   isPlayer: 1
   throttleInput: Throttle
   brakeInput: Break
@@ -1913,6 +1918,19 @@ MonoBehaviour:
   minPitch: 1
   pitchSpeed: 0.07
   volume: 1
+--- !u!114 &704650633978897101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b0f092401ef884daf6db9bea4a7b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwitchCar: {fileID: 0}
 --- !u!1 &1819827312411906
 GameObject:
   m_ObjectHideFlags: 0
