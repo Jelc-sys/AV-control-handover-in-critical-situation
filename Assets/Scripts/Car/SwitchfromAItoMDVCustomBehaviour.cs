@@ -8,6 +8,7 @@ public class SwitchFromAItoMDVCustomBehaviour : MonoBehaviour
     private SwitchFromAItoMDV switchToMDVScript;
     private void OnTriggerEnter(Collider other)
     {
+        //SpeedSettings.speed = 0;
         switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();
         switchToMDVScript.makeSwitch();
     }
