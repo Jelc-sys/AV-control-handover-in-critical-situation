@@ -49,7 +49,7 @@ public class SpriteHMI_DASH : HMI
                 //startTime = Time.time;
                 spr = disp5;
                 _renderer_Dash.sprite = spr;
-                reactionScript.StartTimer("Dash countdown");
+                //reactionScript.StartTimer("Dash countdown");
                 await WaitForSecondsAsync(1f);
                 spr = disp4;
                 _renderer_Dash.sprite = spr;
@@ -66,6 +66,7 @@ public class SpriteHMI_DASH : HMI
                 spr = dash;
                 switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();
                 switchToMDVScript.makeSwitch();
+                reactionScript.StartTimer("Dashboard countdown");
                 break;
             default:
                 spr = disabled;
