@@ -1323,6 +1323,7 @@ GameObject:
   - component: {fileID: 8784369703381745628}
   - component: {fileID: 6646751581225735169}
   - component: {fileID: 6369697156688634169}
+  - component: {fileID: 2260747459970837719}
   m_Layer: 9
   m_Name: DrivableSmartCommon-no_driver
   m_TagString: ManualCar
@@ -2000,7 +2001,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f3d39bfac53db4cace745b4475ba71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HMIStatic: {fileID: 1018772465587298, guid: e325a065254e48645b0ad61ac3973542, type: 3}
+--- !u!114 &2260747459970837719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2977efc03c63cb24c97337430156d36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwitchCar: {fileID: 0}
 --- !u!1 &1819827312411906
 GameObject:
   m_ObjectHideFlags: 0
@@ -9388,7 +9401,7 @@ GameObject:
   - component: {fileID: 5256922112093062627}
   m_Layer: 9
   m_Name: ColliderFront
-  m_TagString: Untagged
+  m_TagString: Pedestrian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9418,7 +9431,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

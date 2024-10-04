@@ -26,6 +26,7 @@ public class SpriteHMI : HMI
     private bool isPostProcessEnabled = false;
     public GameObject carAI;      //To switch to MDV
     private SwitchFromAItoMDV switchToMDVScript;
+    private SwitchFromMDVtoAI switchToAIScript;
 
     public override void Display(HMIState state)
     {
@@ -58,6 +59,10 @@ public class SpriteHMI : HMI
             case HMIState.MDV:
                 switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();
                 switchToMDVScript.makeSwitch();
+                break;
+            case HMIState.AI:
+                switchToAIScript = carAI.GetComponent<SwitchFromMDVtoAI>();
+                switchToAIScript.makeSwitch();
                 break;
             default:
                 spr = disabled;

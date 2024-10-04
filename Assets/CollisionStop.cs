@@ -33,7 +33,7 @@ public class CollisionStop : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            AICarScript.enabled = true;
+            //AICarScript.enabled = true;
         }
     }
 }
