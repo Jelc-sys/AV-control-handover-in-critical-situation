@@ -295,7 +295,7 @@ MonoBehaviour:
     Prefabs:
     - {fileID: 7713759469045616529, guid: 1baf460ab026f1247ab4696be569ffae, type: 3}
   Experiments:
-  - {fileID: 8692043556341430772, guid: 194d0e72fdcd5014995b4ab30bdc481a, type: 3}
+  - {fileID: 8692043556341430772, guid: 2ff9cfd631589d44baf0ce90d44e390d, type: 3}
   hideGui: 0
   RunTrialSequenceAutomatically: 0
   recordVideos: 0
