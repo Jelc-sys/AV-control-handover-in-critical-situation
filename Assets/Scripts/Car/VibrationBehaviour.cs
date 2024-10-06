@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeepBehaviour : MonoBehaviour
+public class VibrationBehaviour : MonoBehaviour
 {
     public GameObject carAI;
-    private Beep BeepScript;
     private GameObject HMIStatic;
     private Transform dashWarning;
     private void OnTriggerEnter(Collider other)
@@ -15,9 +14,10 @@ public class BeepBehaviour : MonoBehaviour
         dashWarning = carAI.transform.Find("Dash_Warning");
         SpriteRenderer spriteRenderer = dashWarning.GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
+        ControllerVibration controllerScript = GetComponent<ControllerVibration>();
+        controllerScript.TriggerVibration();
         //SpeedSettings.speed = 0;
-        BeepScript = carAI.GetComponent<Beep>();
-        BeepScript.playBeep();
+
         SpriteHMI_DASH HMIScript = HMIStatic.GetComponent<SpriteHMI_DASH>();
         HMIScript.Display(HMIState.DASH);
     }

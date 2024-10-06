@@ -37,9 +37,9 @@ public class LightFlash : MonoBehaviour
         GameObject postProcessObject = GameObject.Find("PostProcess");
         postProcessVolume = postProcessObject.GetComponent<PostProcessVolume>();
         SpriteRenderer spriteRenderer = dashWarning.GetComponent<SpriteRenderer>(); //Finds SpriteRenderer in the Dash_Warning
-        ControllerVibration controllerScript = GetComponent<ControllerVibration>();
+        //ControllerVibration controllerScript = GetComponent<ControllerVibration>();
         //ReactionTimeTracker reactionScript = reactionTimeTracker.GetComponent<ReactionTimeTracker>();
-        controllerScript.TriggerVibration();
+        //controllerScript.TriggerVibration();
         StartCoroutine(FlashCoroutine());
         //spriteRenderer.enabled = !spriteRenderer.enabled; //Enables or disables warning lamp
         //switchToMDVScript = carAI.GetComponent<SwitchFromAItoMDV>();

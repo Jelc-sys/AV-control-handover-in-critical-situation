@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeepBehaviour : MonoBehaviour
+public class LightFlashWarningOnlyBehaviour : MonoBehaviour
 {
     public GameObject carAI;
-    private Beep BeepScript;
     private GameObject HMIStatic;
+    private LightFlash LightFlashScript;
     private Transform dashWarning;
     private void OnTriggerEnter(Collider other)
     {
@@ -14,11 +14,13 @@ public class BeepBehaviour : MonoBehaviour
         carAI = GameObject.Find("DrivableSmartCommon-no_driver(Clone)");
         dashWarning = carAI.transform.Find("Dash_Warning");
         SpriteRenderer spriteRenderer = dashWarning.GetComponent<SpriteRenderer>();
-        spriteRenderer.enabled = false;
+
         //SpeedSettings.speed = 0;
-        BeepScript = carAI.GetComponent<Beep>();
-        BeepScript.playBeep();
-        SpriteHMI_DASH HMIScript = HMIStatic.GetComponent<SpriteHMI_DASH>();
-        HMIScript.Display(HMIState.DASH);
+        LightFlashScript = carAI.GetComponent<LightFlash>();
+        LightFlashScript.flash();
+        spriteRenderer.enabled = true;
+
+        //SpriteHMI_DASH HMIScript = HMIStatic.GetComponent<SpriteHMI_DASH>();
+        //HMIScript.Display(HMIState.DASH);
     }
 }
