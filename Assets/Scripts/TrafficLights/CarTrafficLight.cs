@@ -53,6 +53,5 @@ public class CarTrafficLight : MonoBehaviour
         middleLightRenderer.material = yellowMaterial;
         upRenderer.material = redMaterial;
     }
-
 }
 
