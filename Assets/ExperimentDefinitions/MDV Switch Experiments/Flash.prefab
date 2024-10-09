@@ -711,7 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAICar: {fileID: 0}
   Type: 1
-  speed: 20
+  speed: 0
   acceleration: -2
   BlinkerState: 0
   jerk: -2
@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 9134190108462648874}
   - component: {fileID: 7150032317626390222}
   - component: {fileID: 5748762873654599276}
+  - component: {fileID: 4840282262740309668}
   m_Layer: 5
   m_Name: WP2
   m_TagString: WP
@@ -750,7 +751,7 @@ Transform:
   m_GameObject: {fileID: 3768472460259297531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: 0.2, y: 0, z: -50.5}
+  m_LocalPosition: {x: -29.5, y: 0, z: -50.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -803,6 +804,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &4840282262740309668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768472460259297531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e626d89bc8f9894fb6a6c82fef9e4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &4698357965832329486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1395,7 @@ GameObject:
   - component: {fileID: 7609667120526454229}
   - component: {fileID: 8692043556341430772}
   m_Layer: 0
-  m_Name: Beep
+  m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1714,7 +1728,6 @@ GameObject:
   - component: {fileID: 7441142455299039210}
   - component: {fileID: 668095391187439168}
   - component: {fileID: 3869171235789854190}
-  - component: {fileID: 6452200703378212432}
   m_Layer: 5
   m_Name: WP14
   m_TagString: WP
@@ -1784,19 +1797,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &6452200703378212432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341426375665059887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2ace7cf29c4e543b971be52f209c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
 --- !u!1 &7533570759686457814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1919,7 @@ GameObject:
   - component: {fileID: 4803616439061888983}
   - component: {fileID: 8617766615323374914}
   - component: {fileID: 7767014205059734765}
-  - component: {fileID: 3395387627263664651}
+  - component: {fileID: 915531359630442238}
   m_Layer: 5
   m_Name: WP4
   m_TagString: WP
@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAICar: {fileID: 0}
   Type: 1
-  speed: 15
+  speed: 0
   acceleration: -2
   BlinkerState: 0
   jerk: -2
@@ -1989,7 +1989,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &3395387627263664651
+--- !u!114 &915531359630442238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7703489931290652453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 840dc41ca62d7d14f8b108746f6ba568, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}

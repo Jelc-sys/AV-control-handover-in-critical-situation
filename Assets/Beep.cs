@@ -12,7 +12,7 @@ public class Beep : MonoBehaviour
     public GameObject reactionTimeTracker;
     private SwitchFromAItoMDV switchToMDVScript;
     public GameObject carAI;
-    System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/sounds/beep-01a.wav");
+    System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/sounds/beep-02a.wav");
 
     //public GameObject AICarObj;
 
@@ -42,11 +42,11 @@ public class Beep : MonoBehaviour
     IEnumerator FlashCoroutine()
     {
         player.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         player.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         player.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         player.Play();
         ReactionTimeTracker reactionScript = reactionTimeTracker.GetComponent<ReactionTimeTracker>();
         reactionScript.StartTimer("Auditory beep");
