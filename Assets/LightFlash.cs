@@ -18,8 +18,8 @@ public class LightFlash : MonoBehaviour
     private Bloom bloomLayer; // Bloom effect reference
     private ColorGrading colorGradingLayer; // Color Grading effect reference
 
-    public float amplitude = 30000.0f; // Amplitude of the breathing effect
-    public float frequency = 0.1f; // Frequency of the breathing effect
+    public float amplitude = 300000.0f; // Amplitude of the breathing effect
+    public float frequency = 0.5f; // Frequency of the breathing effect
 
     private float baseIntensity = 0.0f; // Base intensity for the bloom
 
@@ -61,10 +61,12 @@ public class LightFlash : MonoBehaviour
     public void flash()
     {
         // Start the breathing effect
-        StartCoroutine(BreathingBloomCoroutine(1.0f)); // 1 second duration for the breathing effect
+        StartCoroutine(BreathingBloomCoroutine(3.0f, 5)); // 4 second duration, repeat 5 times
     }
 
-    private IEnumerator BreathingBloomCoroutine(float duration)
+    private IEnumerator BreathingBloomCoroutine(float duration, int repetitions)
+{
+    for (int i = 0; i < repetitions; i++)
     {
         float elapsedTime = 0.0f;
 
@@ -74,7 +76,7 @@ public class LightFlash : MonoBehaviour
             float t = Mathf.Clamp01(elapsedTime / duration);
 
             // Calculate the bloom intensity based on a sine wave for smooth breathing
-            float intensity = baseIntensity + Mathf.Sin(t * Mathf.PI * frequency) * amplitude;
+            float intensity = baseIntensity + 2 * Mathf.Sin(t * Mathf.PI * frequency) * amplitude;
 
             // Update the bloom intensity
             if (bloomLayer != null)
@@ -87,10 +89,14 @@ public class LightFlash : MonoBehaviour
             yield return null; // Wait for the next frame
         }
 
-        // Reset the intensity after the effect if needed
+        // Reset the intensity after each cycle
         if (bloomLayer != null)
         {
             bloomLayer.intensity.value = baseIntensity; // Reset to base intensity after breathing
         }
+
+        // Optional: Add a delay between repetitions if you want to pause between cycles
+        yield return new WaitForSeconds(0.5f); // 0.5 second pause between cycles (adjust as needed)
     }
+}
 }
