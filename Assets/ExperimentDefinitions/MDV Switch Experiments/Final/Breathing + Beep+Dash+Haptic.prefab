@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 7221062218429442546}
   - component: {fileID: 1951629374348013718}
   - component: {fileID: 3545768148562510389}
+  - component: {fileID: 2988871099104827051}
   m_Layer: 5
   m_Name: WP1
   m_TagString: WP
@@ -452,6 +453,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &2988871099104827051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127119374895183106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e626d89bc8f9894fb6a6c82fef9e4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &2362279868406790923
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +749,8 @@ GameObject:
   - component: {fileID: 7150032317626390222}
   - component: {fileID: 5748762873654599276}
   - component: {fileID: 3615839975515500230}
-  - component: {fileID: 4194075291546395922}
+  - component: {fileID: 6147080094927755508}
+  - component: {fileID: 576815518809391091}
   m_Layer: 5
   m_Name: WP2
   m_TagString: WP
@@ -818,7 +833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}
---- !u!114 &4194075291546395922
+--- !u!114 &6147080094927755508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -827,10 +842,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3768472460259297531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e626d89bc8f9894fb6a6c82fef9e4ed, type: 3}
+  m_Script: {fileID: 11500000, guid: bf11ed24f8dd27b4488e956629d88e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}
+--- !u!114 &576815518809391091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768472460259297531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c7f69c8a9c7414881b8da952c32ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reasonForActivation: breathing + visual + auditory + haptic
 --- !u!1 &3838523761706619739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,7 +1686,7 @@ GameObject:
   - component: {fileID: 7609667120526454229}
   - component: {fileID: 8692043556341430772}
   m_Layer: 0
-  m_Name: Beep+Flash
+  m_Name: Breathing + Beep+Dash+Haptic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -45,9 +45,8 @@ public class ReactionTimeTracker : MonoBehaviour
 
         using (StreamWriter writer = new StreamWriter(filePath, true))
         {
-            writer.WriteLine();
             writer.WriteLine("Reaction Time: " + reactionTime + " seconds");
-            writer.WriteLine("Reason for activation: " + reasonForActivation);
+            //writer.WriteLine("Reason for activation: " + reasonForActivation);
         }
         Debug.Log("Reaction time saved to: " + filePath);
 
