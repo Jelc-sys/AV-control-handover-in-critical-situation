@@ -1325,6 +1325,7 @@ GameObject:
   - component: {fileID: 6369697156688634169}
   - component: {fileID: 2260747459970837719}
   - component: {fileID: 5048082107918415242}
+  - component: {fileID: 8225903139733152111}
   m_Layer: 9
   m_Name: DrivableSmartCommon-no_driver
   m_TagString: ManualCar
@@ -1977,6 +1978,8 @@ MonoBehaviour:
   reactionTimeTracker: {fileID: 0}
   postProcessVolume: {fileID: 0}
   carAI: {fileID: 0}
+  amplitude: 300000
+  frequency: 0.5
 --- !u!114 &6646751581225735169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2034,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9eda6b7fb7d99845a436e6da818293c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8225903139733152111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad06baffadfcf6a478f7e802c33ea37e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
 --- !u!1 &1819827312411906
 GameObject:
   m_ObjectHideFlags: 0

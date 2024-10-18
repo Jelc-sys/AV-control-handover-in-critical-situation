@@ -18,7 +18,7 @@ public class LightFlash : MonoBehaviour
     private Bloom bloomLayer; // Bloom effect reference
     private ColorGrading colorGradingLayer; // Color Grading effect reference
 
-    public float amplitude = 300000.0f; // Amplitude of the breathing effect
+    public float amplitude = 5.0f; // Amplitude of the breathing effect
     public float frequency = 0.5f; // Frequency of the breathing effect
 
     private float baseIntensity = 0.0f; // Base intensity for the bloom
