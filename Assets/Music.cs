@@ -12,7 +12,7 @@ public class Music : MonoBehaviour
     public GameObject reactionTimeTracker;
     private SwitchFromAItoMDV switchToMDVScript;
     public GameObject carAI;
-    System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/Sounds/Outkast - Hey Ya! (Official HD Video).wav");
+    System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"Assets/Sounds/Voice1.wav");
     //public GameObject AICarObj;
 
 

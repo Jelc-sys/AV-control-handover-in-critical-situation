@@ -143,7 +143,6 @@ GameObject:
   - component: {fileID: 7221062218429442546}
   - component: {fileID: 1951629374348013718}
   - component: {fileID: 3545768148562510389}
-  - component: {fileID: 1098817752925598161}
   m_Layer: 5
   m_Name: WP1
   m_TagString: WP
@@ -213,19 +212,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &1098817752925598161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127119374895183106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2ace7cf29c4e543b971be52f209c8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 1787876385652902, guid: ebd3970cf96c84fdb90d5b8e3e55ddbc, type: 3}
 --- !u!1 &2362279868406790923
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +414,7 @@ GameObject:
   - component: {fileID: 9134190108462648874}
   - component: {fileID: 7150032317626390222}
   - component: {fileID: 5748762873654599276}
-  - component: {fileID: 3679593689838982063}
+  - component: {fileID: 1392107940976029044}
   m_Layer: 5
   m_Name: WP2
   m_TagString: WP
@@ -498,7 +484,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &3679593689838982063
+--- !u!114 &1392107940976029044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1016,7 +1002,6 @@ GameObject:
   - component: {fileID: 4803616439061888983}
   - component: {fileID: 8617766615323374914}
   - component: {fileID: 7767014205059734765}
-  - component: {fileID: 1598200280038628565}
   m_Layer: 5
   m_Name: WP4
   m_TagString: WP
@@ -1086,19 +1071,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &1598200280038628565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703489931290652453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40345aaa3b95ff4d82a9d3c6c496980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
 --- !u!1001 &1257692278195448331
 PrefabInstance:
   m_ObjectHideFlags: 0
