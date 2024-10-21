@@ -19,7 +19,7 @@ public class LightFlash : MonoBehaviour
     private ColorGrading colorGradingLayer; // Color Grading effect reference
 
     public float amplitude = 5.0f; // Amplitude of the breathing effect
-    public float frequency = 0.5f; // Frequency of the breathing effect
+    public float frequency = 1.5f; // Frequency of the breathing effect
 
     private float baseIntensity = 0.0f; // Base intensity for the bloom
 
@@ -81,7 +81,7 @@ public class LightFlash : MonoBehaviour
             // Update the bloom intensity
             if (bloomLayer != null)
             {
-                bloomLayer.intensity.value = intensity;
+                bloomLayer.intensity.value = intensity / 40000;
             }
 
             // Increment elapsed time

@@ -1326,6 +1326,11 @@ GameObject:
   - component: {fileID: 2260747459970837719}
   - component: {fileID: 5048082107918415242}
   - component: {fileID: 8909552487528933753}
+  - component: {fileID: 8731712996066670330}
+  - component: {fileID: 1076124572715024524}
+  - component: {fileID: 1015506311497752523}
+  - component: {fileID: 742017820109606695}
+  - component: {fileID: 5547993456416936474}
   m_Layer: 9
   m_Name: DrivableSmartCommon-no_driver
   m_TagString: ManualCar
@@ -2050,7 +2055,92 @@ MonoBehaviour:
   dashWarning: {fileID: 0}
   reactionTimeTracker: {fileID: 0}
   carAI: {fileID: 0}
-  audioClipPath: Sounds/Voice1
+  voiceClip: {fileID: 8300000, guid: 703784c3ee3af1649ac723097e3b4d4d, type: 3}
+--- !u!114 &8731712996066670330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a625321de616954da8579cbdd4ca000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2e37867fff503e74f86a3b546946f077, type: 3}
+--- !u!114 &1076124572715024524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc077d6b6090d074bbd29953b41a5299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 0bc91d2fc4d90184cb97e43e9032883a, type: 3}
+--- !u!114 &1015506311497752523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea633a5f37d5d814eac24b68fb78ddec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ff94286172fa6774583963feefff8d0a, type: 3}
+--- !u!114 &742017820109606695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cad91df7c79a474aa2328a749d0635d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 6998c63571f29a549be80e4d9bd2d838, type: 3}
+--- !u!114 &5547993456416936474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787876385652902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297a1aa7c833966409d08c521bcc9663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
+  dashWarning: {fileID: 0}
+  reactionTimeTracker: {fileID: 0}
+  carAI: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 90c93b0e111b159429e7aacef45cf3c7, type: 3}
 --- !u!1 &1819827312411906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6844,7 +6934,7 @@ MonoBehaviour:
   dashWarning: {fileID: 0}
   reactionTimeTracker: {fileID: 0}
   carAI: {fileID: 0}
-  audioClipPath: Sounds/Voice1
+  voiceClip: {fileID: 0}
 --- !u!82 &306100146147715733
 AudioSource:
   m_ObjectHideFlags: 0

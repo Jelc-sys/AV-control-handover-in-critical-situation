@@ -65,7 +65,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 935614564}
   m_LocalEulerAnglesHint: {x: 0, y: 177.359, z: 0}
---- !u!1 &276208266921110163
+--- !u!1 &139586402561136516
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,38 +73,125 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7125688744085032901}
-  - component: {fileID: 7675088959931843599}
-  - component: {fileID: 6529931832598956246}
+  - component: {fileID: 2986274597394354450}
+  - component: {fileID: 6714712265151107756}
   m_Layer: 5
-  m_Name: WP5 (3)
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Name: Custom Circuit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7125688744085032901
+--- !u!4 &2986274597394354450
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276208266921110163}
+  m_GameObject: {fileID: 139586402561136516}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 59.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3956368974036284380}
+  - {fileID: 5528737387388040757}
+  - {fileID: 2123505955983293844}
+  - {fileID: 4051465837075544886}
+  - {fileID: 4816441458044909137}
+  - {fileID: 987821557346392543}
+  - {fileID: 8160808222081138679}
+  - {fileID: 1676791149330786681}
+  - {fileID: 9169574390091125829}
+  - {fileID: 7282698935958018104}
+  - {fileID: 1327055025126769828}
+  - {fileID: 3630070741885790192}
+  - {fileID: 5856050644082580629}
+  - {fileID: 8843479059040481514}
+  - {fileID: 3882070373813276343}
+  - {fileID: 3337298877570122874}
+  - {fileID: 2676837417012186589}
+  - {fileID: 4127764654910203742}
+  - {fileID: 4118803857372393005}
+  m_Father: {fileID: 7609667120526454229}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6714712265151107756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139586402561136516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70852dc981465ea48bb527b9e33a87fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointList:
+    circuit: {fileID: 6714712265151107756}
+    items:
+    - {fileID: 1311683245}
+    - {fileID: 3956368974036284380}
+    - {fileID: 5528737387388040757}
+    - {fileID: 2123505955983293844}
+    - {fileID: 4051465837075544886}
+    - {fileID: 4816441458044909137}
+    - {fileID: 987821557346392543}
+    - {fileID: 8160808222081138679}
+    - {fileID: 1676791149330786681}
+    - {fileID: 9169574390091125829}
+    - {fileID: 7282698935958018104}
+    - {fileID: 1327055025126769828}
+    - {fileID: 3630070741885790192}
+    - {fileID: 5856050644082580629}
+    - {fileID: 8843479059040481514}
+    - {fileID: 3882070373813276343}
+    - {fileID: 3337298877570122874}
+    - {fileID: 2676837417012186589}
+    - {fileID: 4127764654910203742}
+  smoothRoute: 0
+  editorVisualisationSubsteps: 500
+--- !u!1 &234310558100602283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7282698935958018104}
+  - component: {fileID: 5450904429892875400}
+  - component: {fileID: 567559120797437343}
+  m_Layer: 5
+  m_Name: WP5 (4)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7282698935958018104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234310558100602283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -93.93, y: 0, z: -49.6}
+  m_LocalPosition: {x: -95.32, y: 0, z: -49.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
+  m_Father: {fileID: 2986274597394354450}
   m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &7675088959931843599
+--- !u!65 &5450904429892875400
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276208266921110163}
+  m_GameObject: {fileID: 234310558100602283}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -119,13 +206,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &6529931832598956246
+--- !u!114 &567559120797437343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276208266921110163}
+  m_GameObject: {fileID: 234310558100602283}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -145,6 +232,100 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!1 &548929982147579657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3956368974036284380}
+  - component: {fileID: 3972256735992857630}
+  - component: {fileID: 1273072390771002530}
+  - component: {fileID: 605678288571639502}
+  m_Layer: 5
+  m_Name: WP1
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3956368974036284380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548929982147579657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7063288, z: 0, w: 0.7078839}
+  m_LocalPosition: {x: 6.8, y: 0, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
+--- !u!65 &3972256735992857630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548929982147579657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1273072390771002530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548929982147579657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 20
+  acceleration: 2
+  BlinkerState: 0
+  jerk: 5
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!114 &605678288571639502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548929982147579657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e626d89bc8f9894fb6a6c82fef9e4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &732286849548543705
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,86 +393,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitiateAV: 0
---- !u!1 &820230202122723516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3715000749714111907}
-  - component: {fileID: 2316525751794856157}
-  - component: {fileID: 1522888026988440693}
-  m_Layer: 5
-  m_Name: WP10
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3715000749714111907
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820230202122723516}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
-  m_LocalPosition: {x: -119.45, y: 0, z: -49.78}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
---- !u!65 &2316525751794856157
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820230202122723516}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &1522888026988440693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820230202122723516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 15
-  acceleration: 1
-  BlinkerState: 0
-  jerk: 2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
 --- !u!1 &930693744270369724
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +477,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1075007128821038083
+--- !u!1 &1147767234984034105
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,39 +485,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9143468429364781912}
-  - component: {fileID: 8430579081168225913}
-  - component: {fileID: 604713860550590970}
-  - component: {fileID: 8059030488013361866}
+  - component: {fileID: 1327055025126769828}
+  - component: {fileID: 5195480164045821027}
+  - component: {fileID: 7497361622977012269}
   m_Layer: 5
-  m_Name: WP1 (3)
+  m_Name: WP6
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9143468429364781912
+--- !u!4 &1327055025126769828
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075007128821038083}
+  m_GameObject: {fileID: 1147767234984034105}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.70632726, z: -0, w: 0.7078855}
-  m_LocalPosition: {x: 6.9, y: 0, z: -25}
+  m_LocalRotation: {x: -0, y: 0.9307144, z: -0, w: 0.3657468}
+  m_LocalPosition: {x: -98.5, y: 0, z: -52.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
---- !u!65 &8430579081168225913
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 137.093, z: 0}
+--- !u!65 &5195480164045821027
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075007128821038083}
+  m_GameObject: {fileID: 1147767234984034105}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -431,13 +531,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &604713860550590970
+--- !u!114 &7497361622977012269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075007128821038083}
+  m_GameObject: {fileID: 1147767234984034105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -445,10 +545,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAICar: {fileID: 0}
   Type: 1
-  speed: 20
+  speed: 5
   acceleration: 2
   BlinkerState: 0
-  jerk: 5
+  jerk: 2
   causeToYield: 0
   EyeContactWhileYielding: 0
   EyeContactAfterYielding: 0
@@ -457,20 +557,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &8059030488013361866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075007128821038083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7938a7098ba0a73409ec90ff7ec5bbbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
---- !u!1 &1718194449623214159
+--- !u!1 &1281024786242058617
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,38 +565,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7558711176515261190}
-  - component: {fileID: 4539623475135703167}
-  - component: {fileID: 7971557549710800938}
+  - component: {fileID: 4816441458044909137}
+  - component: {fileID: 7295575768685403181}
+  - component: {fileID: 8476331746562786187}
   m_Layer: 5
-  m_Name: WP5 (2)
+  m_Name: WP3
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7558711176515261190
+--- !u!4 &4816441458044909137
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718194449623214159}
+  m_GameObject: {fileID: 1281024786242058617}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -92.13, y: 0, z: -49.61}
+  m_LocalPosition: {x: -63.5, y: 0, z: -49.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
+  m_Father: {fileID: 2986274597394354450}
   m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &4539623475135703167
+--- !u!65 &7295575768685403181
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718194449623214159}
+  m_GameObject: {fileID: 1281024786242058617}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -524,13 +611,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &7971557549710800938
+--- !u!114 &8476331746562786187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718194449623214159}
+  m_GameObject: {fileID: 1281024786242058617}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -538,10 +625,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAICar: {fileID: 0}
   Type: 1
-  speed: 0.4
-  acceleration: -1.95
+  speed: 0
+  acceleration: -2
   BlinkerState: 0
-  jerk: -1.95
+  jerk: -2
   causeToYield: 0
   EyeContactWhileYielding: 0
   EyeContactAfterYielding: 0
@@ -550,7 +637,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!1 &2127119374895183106
+--- !u!1 &1862410905538603849
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,39 +645,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7221062218429442546}
-  - component: {fileID: 1951629374348013718}
-  - component: {fileID: 3545768148562510389}
-  - component: {fileID: 6452650039809886812}
+  - component: {fileID: 4051465837075544886}
+  - component: {fileID: 5433526340314169901}
+  - component: {fileID: 6160405996785132559}
+  - component: {fileID: 1412317381857071513}
+  - component: {fileID: 3147358849799291732}
   m_Layer: 5
-  m_Name: WP1
+  m_Name: WP2
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7221062218429442546
+--- !u!4 &4051465837075544886
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127119374895183106}
+  m_GameObject: {fileID: 1862410905538603849}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7063288, z: 0, w: 0.7078839}
-  m_LocalPosition: {x: 6.8, y: 0, z: 8}
+  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
+  m_LocalPosition: {x: -29.5, y: 0, z: -50.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
---- !u!65 &1951629374348013718
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
+--- !u!65 &5433526340314169901
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127119374895183106}
+  m_GameObject: {fileID: 1862410905538603849}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -605,13 +693,119 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3545768148562510389
+--- !u!114 &6160405996785132559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127119374895183106}
+  m_GameObject: {fileID: 1862410905538603849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 20
+  acceleration: -2
+  BlinkerState: 0
+  jerk: -2
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!114 &1412317381857071513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862410905538603849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff81b89d3f27dd843b03ae4ecc808d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
+--- !u!114 &3147358849799291732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862410905538603849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c7f69c8a9c7414881b8da952c32ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reasonForActivation: visual
+--- !u!1 &2019248794598852286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5528737387388040757}
+  - component: {fileID: 5555344777908532495}
+  - component: {fileID: 4612613146242814940}
+  m_Layer: 5
+  m_Name: WP1 (1)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5528737387388040757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019248794598852286}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7063288, z: 0, w: 0.7078839}
+  m_LocalPosition: {x: 6.9, y: 0, z: -42.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
+--- !u!65 &5555344777908532495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019248794598852286}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4612613146242814940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019248794598852286}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -631,19 +825,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &6452650039809886812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127119374895183106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e626d89bc8f9894fb6a6c82fef9e4ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
 --- !u!1 &2362279868406790923
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +936,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!1 &3111883385563569648
+--- !u!1 &3628886988433195033
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -763,38 +944,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5507625423199814554}
-  - component: {fileID: 2255837115614036643}
-  - component: {fileID: 3434975246243876149}
+  - component: {fileID: 9169574390091125829}
+  - component: {fileID: 1675451663014569296}
+  - component: {fileID: 7318872547660345221}
   m_Layer: 5
-  m_Name: WP13
+  m_Name: WP5 (3)
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5507625423199814554
+--- !u!4 &9169574390091125829
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111883385563569648}
+  m_GameObject: {fileID: 3628886988433195033}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9270042, z: -0, w: -0.37505093}
-  m_LocalPosition: {x: -129.05, y: 0, z: -47.52}
+  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
+  m_LocalPosition: {x: -93.93, y: 0, z: -49.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 224.055, z: 0}
---- !u!65 &2255837115614036643
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
+--- !u!65 &1675451663014569296
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111883385563569648}
+  m_GameObject: {fileID: 3628886988433195033}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -809,13 +990,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3434975246243876149
+--- !u!114 &7318872547660345221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3111883385563569648}
+  m_GameObject: {fileID: 3628886988433195033}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -824,171 +1005,9 @@ MonoBehaviour:
   targetAICar: {fileID: 0}
   Type: 1
   speed: 5
-  acceleration: 0
-  BlinkerState: 0
-  jerk: 0
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
---- !u!1 &3338314952643495284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6170145623911761239}
-  - component: {fileID: 285350931859254086}
-  - component: {fileID: 8226197956197841883}
-  m_Layer: 5
-  m_Name: WP3
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6170145623911761239
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3338314952643495284}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -69.27, y: 0, z: -49.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &285350931859254086
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3338314952643495284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &8226197956197841883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3338314952643495284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 0
-  acceleration: -2
-  BlinkerState: 0
-  jerk: -2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
---- !u!1 &3768472460259297531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9134190108462648874}
-  - component: {fileID: 7150032317626390222}
-  - component: {fileID: 5748762873654599276}
-  - component: {fileID: 7032894967469611546}
-  - component: {fileID: 6075801113241978494}
-  m_Layer: 5
-  m_Name: WP2
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9134190108462648874
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768472460259297531}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -29.5, y: 0, z: -50.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &7150032317626390222
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768472460259297531}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &5748762873654599276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768472460259297531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 30
   acceleration: 2
   BlinkerState: 0
-  jerk: 5
+  jerk: 2
   causeToYield: 0
   EyeContactWhileYielding: 0
   EyeContactAfterYielding: 0
@@ -997,33 +1016,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &7032894967469611546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768472460259297531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff81b89d3f27dd843b03ae4ecc808d08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
---- !u!114 &6075801113241978494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768472460259297531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32c7f69c8a9c7414881b8da952c32ae3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reasonForActivation: breathing + visual
---- !u!1 &4141305663328581083
+--- !u!1 &3670184526906195859
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1031,9 +1024,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7419345499496770005}
-  - component: {fileID: 6637970026957755748}
-  - component: {fileID: 4529753122905229112}
+  - component: {fileID: 2123505955983293844}
+  - component: {fileID: 4756221194160606797}
+  - component: {fileID: 2571317507520449946}
   m_Layer: 5
   m_Name: WP1 (2)
   m_TagString: WP
@@ -1041,28 +1034,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7419345499496770005
+--- !u!4 &2123505955983293844
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4141305663328581083}
+  m_GameObject: {fileID: 3670184526906195859}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9009521, z: 0, w: 0.43391863}
   m_LocalPosition: {x: 6.9, y: 0, z: -49.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
+  m_Father: {fileID: 2986274597394354450}
   m_LocalEulerAnglesHint: {x: 0, y: 128.567, z: 0}
---- !u!65 &6637970026957755748
+--- !u!65 &4756221194160606797
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4141305663328581083}
+  m_GameObject: {fileID: 3670184526906195859}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1077,13 +1070,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &4529753122905229112
+--- !u!114 &2571317507520449946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4141305663328581083}
+  m_GameObject: {fileID: 3670184526906195859}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -1103,7 +1096,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!1 &4698357965832329486
+--- !u!1 &4224030650433992364
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1111,38 +1104,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5199386120327493210}
-  - component: {fileID: 6775555080798216661}
-  - component: {fileID: 7256287945434180634}
+  - component: {fileID: 2676837417012186589}
+  - component: {fileID: 1010457581102728490}
+  - component: {fileID: 7728860885983216662}
   m_Layer: 5
-  m_Name: WP9
+  m_Name: WP13
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5199386120327493210
+--- !u!4 &2676837417012186589
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4698357965832329486}
+  m_GameObject: {fileID: 4224030650433992364}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.98036534, z: -0, w: -0.1971897}
-  m_LocalPosition: {x: -111.74, y: 0, z: -51.66}
+  m_LocalRotation: {x: -0, y: 0.9270042, z: -0, w: -0.37505093}
+  m_LocalPosition: {x: -129.05, y: 0, z: -47.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 202.745, z: 0}
---- !u!65 &6775555080798216661
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 224.055, z: 0}
+--- !u!65 &1010457581102728490
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4698357965832329486}
+  m_GameObject: {fileID: 4224030650433992364}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1157,13 +1150,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &7256287945434180634
+--- !u!114 &7728860885983216662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4698357965832329486}
+  m_GameObject: {fileID: 4224030650433992364}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -1214,7 +1207,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7609667120526454229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4916567800229737828
+--- !u!1 &5784888790862666606
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1222,38 +1215,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6568179010083062598}
-  - component: {fileID: 1209545798971573782}
-  - component: {fileID: 787936628700726680}
+  - component: {fileID: 5856050644082580629}
+  - component: {fileID: 3136972557222540447}
+  - component: {fileID: 7543182912530085008}
   m_Layer: 5
-  m_Name: WP12
+  m_Name: WP8
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6568179010083062598
+--- !u!4 &5856050644082580629
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916567800229737828}
+  m_GameObject: {fileID: 5784888790862666606}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
-  m_LocalPosition: {x: -126.4, y: 0, z: -49.6}
+  m_LocalRotation: {x: -0, y: 0.9930165, z: -0, w: -0.11797605}
+  m_LocalPosition: {x: -107.72, y: 0, z: -53.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
---- !u!65 &1209545798971573782
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 193.551, z: 0}
+--- !u!65 &3136972557222540447
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916567800229737828}
+  m_GameObject: {fileID: 5784888790862666606}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1268,93 +1261,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &787936628700726680
+--- !u!114 &7543182912530085008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4916567800229737828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 10
-  acceleration: -2
-  BlinkerState: 0
-  jerk: -2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
---- !u!1 &5025791581917264986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6062799979784682790}
-  - component: {fileID: 2259173335719345392}
-  - component: {fileID: 3376059779349877259}
-  m_Layer: 5
-  m_Name: WP5 (1)
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6062799979784682790
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025791581917264986}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -89.85, y: 0, z: -49.63}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &2259173335719345392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025791581917264986}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3376059779349877259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025791581917264986}
+  m_GameObject: {fileID: 5784888790862666606}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -1363,9 +1276,9 @@ MonoBehaviour:
   targetAICar: {fileID: 0}
   Type: 1
   speed: 5
-  acceleration: 2
+  acceleration: 0
   BlinkerState: 0
-  jerk: 2
+  jerk: 0
   causeToYield: 0
   EyeContactWhileYielding: 0
   EyeContactAfterYielding: 0
@@ -1374,93 +1287,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!1 &5453350680413711851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6483015152606107743}
-  - component: {fileID: 8545494614884845535}
-  m_Layer: 5
-  m_Name: Custom Circuit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6483015152606107743
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5453350680413711851}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 59.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7221062218429442546}
-  - {fileID: 4120462741425762954}
-  - {fileID: 7419345499496770005}
-  - {fileID: 9134190108462648874}
-  - {fileID: 6170145623911761239}
-  - {fileID: 4803616439061888983}
-  - {fileID: 6062799979784682790}
-  - {fileID: 7558711176515261190}
-  - {fileID: 7125688744085032901}
-  - {fileID: 2959587917612876968}
-  - {fileID: 1858386896400011017}
-  - {fileID: 8254766990909427314}
-  - {fileID: 88419990022165503}
-  - {fileID: 5199386120327493210}
-  - {fileID: 3715000749714111907}
-  - {fileID: 6568179010083062598}
-  - {fileID: 5507625423199814554}
-  - {fileID: 7441142455299039210}
-  - {fileID: 9143468429364781912}
-  m_Father: {fileID: 7609667120526454229}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8545494614884845535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5453350680413711851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70852dc981465ea48bb527b9e33a87fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointList:
-    circuit: {fileID: 8545494614884845535}
-    items:
-    - {fileID: 1311683245}
-    - {fileID: 7221062218429442546}
-    - {fileID: 4120462741425762954}
-    - {fileID: 7419345499496770005}
-    - {fileID: 9134190108462648874}
-    - {fileID: 6170145623911761239}
-    - {fileID: 4803616439061888983}
-    - {fileID: 6062799979784682790}
-    - {fileID: 7558711176515261190}
-    - {fileID: 7125688744085032901}
-    - {fileID: 2959587917612876968}
-    - {fileID: 1858386896400011017}
-    - {fileID: 8254766990909427314}
-    - {fileID: 88419990022165503}
-    - {fileID: 5199386120327493210}
-    - {fileID: 3715000749714111907}
-    - {fileID: 6568179010083062598}
-    - {fileID: 5507625423199814554}
-    - {fileID: 7441142455299039210}
-  smoothRoute: 0
-  editorVisualisationSubsteps: 500
 --- !u!1 &5805787797847303217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,86 +1341,6 @@ MonoBehaviour:
     color: {r: 0, g: 0, b: 0, a: 0}
     Labeled: 0
     customBehaviours: []
---- !u!1 &5879783746397519458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 88419990022165503}
-  - component: {fileID: 2941111963635517033}
-  - component: {fileID: 6756411506775570267}
-  m_Layer: 5
-  m_Name: WP8
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &88419990022165503
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5879783746397519458}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9930165, z: -0, w: -0.11797605}
-  m_LocalPosition: {x: -107.72, y: 0, z: -53.74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 193.551, z: 0}
---- !u!65 &2941111963635517033
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5879783746397519458}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &6756411506775570267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5879783746397519458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 5
-  acceleration: 0
-  BlinkerState: 0
-  jerk: 0
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
 --- !u!1 &6061505013740183001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1421,420 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!1 &6073261741640864279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8160808222081138679}
+  - component: {fileID: 403074087269241585}
+  - component: {fileID: 6124881365414656585}
+  m_Layer: 5
+  m_Name: WP5 (1)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8160808222081138679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073261741640864279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
+  m_LocalPosition: {x: -89.85, y: 0, z: -49.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
+--- !u!65 &403074087269241585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073261741640864279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6124881365414656585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073261741640864279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 5
+  acceleration: 2
+  BlinkerState: 0
+  jerk: 2
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!1 &6115026020843993292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8843479059040481514}
+  - component: {fileID: 5127299210085001223}
+  - component: {fileID: 7068681672705301966}
+  m_Layer: 5
+  m_Name: WP9
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8843479059040481514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6115026020843993292}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.98036534, z: -0, w: -0.1971897}
+  m_LocalPosition: {x: -111.74, y: 0, z: -51.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 202.745, z: 0}
+--- !u!65 &5127299210085001223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6115026020843993292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &7068681672705301966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6115026020843993292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 5
+  acceleration: 0
+  BlinkerState: 0
+  jerk: 0
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!1 &6242769716892830615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3337298877570122874}
+  - component: {fileID: 8839725769248642353}
+  - component: {fileID: 4516606534260860237}
+  - component: {fileID: 1329130975217733110}
+  m_Layer: 5
+  m_Name: WP12
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3337298877570122874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242769716892830615}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
+  m_LocalPosition: {x: -126.4, y: 0, z: -49.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
+--- !u!65 &8839725769248642353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242769716892830615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 5}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4516606534260860237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242769716892830615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 10
+  acceleration: -2
+  BlinkerState: 0
+  jerk: -2
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!114 &1329130975217733110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242769716892830615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cc99f9b84bcf84cb6f88fdf74721c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
+--- !u!1 &6423053983648615134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676791149330786681}
+  - component: {fileID: 5885564149354403832}
+  - component: {fileID: 1708388229369492261}
+  m_Layer: 5
+  m_Name: WP5 (2)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676791149330786681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423053983648615134}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
+  m_LocalPosition: {x: -92.13, y: 0, z: -49.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
+--- !u!65 &5885564149354403832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423053983648615134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1708388229369492261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423053983648615134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 0.4
+  acceleration: -1.95
+  BlinkerState: 0
+  jerk: -1.95
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!1 &6497602102031340605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3882070373813276343}
+  - component: {fileID: 7086108867972961075}
+  - component: {fileID: 8160613432130988743}
+  m_Layer: 5
+  m_Name: WP10
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3882070373813276343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497602102031340605}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
+  m_LocalPosition: {x: -119.45, y: 0, z: -49.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
+--- !u!65 &7086108867972961075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497602102031340605}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8160613432130988743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497602102031340605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 15
+  acceleration: 1
+  BlinkerState: 0
+  jerk: 2
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
 --- !u!1 &6692014269374732414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,7 +1865,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6483015152606107743}
+  - {fileID: 2986274597394354450}
   - {fileID: 6395839017716348911}
   - {fileID: 935614564}
   - {fileID: 7613172863951723817}
@@ -1806,7 +1966,7 @@ MonoBehaviour:
       Type: 2
       CameraIndex: 0
       VehicleType: 1
-    AutonomousPath: {fileID: 8545494614884845535}
+    AutonomousPath: {fileID: 6714712265151107756}
     AutonomousIsYielding: 0
   PointsOfInterest: []
   CarSpawners:
@@ -1815,166 +1975,6 @@ MonoBehaviour:
     AIPedestrians:
     - Pedestrian: {fileID: 7157347147832208027}
       Path: {fileID: 8694987241760910644}
---- !u!1 &6826530985745935153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8254766990909427314}
-  - component: {fileID: 1112221453666568635}
-  - component: {fileID: 8449075253131792553}
-  m_Layer: 5
-  m_Name: WP7
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8254766990909427314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6826530985745935153}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999956, z: -0, w: -0.002975038}
-  m_LocalPosition: {x: -102.72, y: 0, z: -55.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.341, z: 0}
---- !u!65 &1112221453666568635
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6826530985745935153}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &8449075253131792553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6826530985745935153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 5
-  acceleration: 0
-  BlinkerState: 0
-  jerk: 0
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
---- !u!1 &6949329555002647358
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1858386896400011017}
-  - component: {fileID: 6408016676856026759}
-  - component: {fileID: 2396197364997145192}
-  m_Layer: 5
-  m_Name: WP6
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1858386896400011017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6949329555002647358}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9307144, z: -0, w: 0.3657468}
-  m_LocalPosition: {x: -98.5, y: 0, z: -52.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 137.093, z: 0}
---- !u!65 &6408016676856026759
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6949329555002647358}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &2396197364997145192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6949329555002647358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 5
-  acceleration: 2
-  BlinkerState: 0
-  jerk: 2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
 --- !u!1 &7005373354728422933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,86 +2009,6 @@ Transform:
   - {fileID: 8181388126871438445}
   m_Father: {fileID: 7609667120526454229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7341426375665059887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7441142455299039210}
-  - component: {fileID: 668095391187439168}
-  - component: {fileID: 3869171235789854190}
-  m_Layer: 5
-  m_Name: WP14
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7441142455299039210
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341426375665059887}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
-  m_LocalPosition: {x: -138, y: 0, z: -46.42}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
---- !u!65 &668095391187439168
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341426375665059887}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3869171235789854190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341426375665059887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 0
-  acceleration: -2
-  BlinkerState: 0
-  jerk: -2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
 --- !u!1 &7533570759686457814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,7 +2040,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 935614564}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1 &7672345548007153301
+--- !u!1 &7762917085960908925
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2128,38 +2048,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2959587917612876968}
-  - component: {fileID: 7577707102336853872}
-  - component: {fileID: 3683119351071255686}
+  - component: {fileID: 4127764654910203742}
+  - component: {fileID: 4936454139054169943}
+  - component: {fileID: 8017402550250105989}
   m_Layer: 5
-  m_Name: WP5 (4)
+  m_Name: WP14
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2959587917612876968
+--- !u!4 &4127764654910203742
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7672345548007153301}
+  m_GameObject: {fileID: 7762917085960908925}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -95.32, y: 0, z: -49.59}
+  m_LocalRotation: {x: -0, y: 0.999999, z: -0, w: 0.0014180728}
+  m_LocalPosition: {x: -138, y: 0, z: -46.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &7577707102336853872
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.838, z: 0}
+--- !u!65 &4936454139054169943
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7672345548007153301}
+  m_GameObject: {fileID: 7762917085960908925}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2174,94 +2094,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3683119351071255686
+--- !u!114 &8017402550250105989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7672345548007153301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetAICar: {fileID: 0}
-  Type: 1
-  speed: 5
-  acceleration: 2
-  BlinkerState: 0
-  jerk: 2
-  causeToYield: 0
-  EyeContactWhileYielding: 0
-  EyeContactAfterYielding: 0
-  yieldTime: 0
-  brakingAcceleration: 0
-  YieldingEyeContactSince: 0
-  YieldingEyeContactUntil: 0
-  customBehaviourData: []
---- !u!1 &7703489931290652453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4803616439061888983}
-  - component: {fileID: 8617766615323374914}
-  - component: {fileID: 7767014205059734765}
-  - component: {fileID: 915531359630442238}
-  m_Layer: 5
-  m_Name: WP4
-  m_TagString: WP
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4803616439061888983
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703489931290652453}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
-  m_LocalPosition: {x: -75.84, y: 0, z: -49.77}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
---- !u!65 &8617766615323374914
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703489931290652453}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.25, y: 4, z: 0}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &7767014205059734765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703489931290652453}
+  m_GameObject: {fileID: 7762917085960908925}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -2281,20 +2120,7 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &915531359630442238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703489931290652453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
---- !u!1 &8261549496348393606
+--- !u!1 &8818018076580236956
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2302,38 +2128,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4120462741425762954}
-  - component: {fileID: 8778311110598827966}
-  - component: {fileID: 6657085812971257634}
+  - component: {fileID: 3630070741885790192}
+  - component: {fileID: 5934464031089605217}
+  - component: {fileID: 3416907299506512559}
   m_Layer: 5
-  m_Name: WP1 (1)
+  m_Name: WP7
   m_TagString: WP
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4120462741425762954
+--- !u!4 &3630070741885790192
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8261549496348393606}
+  m_GameObject: {fileID: 8818018076580236956}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7063288, z: 0, w: 0.7078839}
-  m_LocalPosition: {x: 6.9, y: 0, z: -42.3}
+  m_LocalRotation: {x: -0, y: 0.9999956, z: -0, w: -0.002975038}
+  m_LocalPosition: {x: -102.72, y: 0, z: -55.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6483015152606107743}
-  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
---- !u!65 &8778311110598827966
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.341, z: 0}
+--- !u!65 &5934464031089605217
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8261549496348393606}
+  m_GameObject: {fileID: 8818018076580236956}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2348,13 +2174,188 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.25, y: 4, z: 0}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &6657085812971257634
+--- !u!114 &3416907299506512559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8261549496348393606}
+  m_GameObject: {fileID: 8818018076580236956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 5
+  acceleration: 0
+  BlinkerState: 0
+  jerk: 0
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: 0
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!1 &9053162182127673636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987821557346392543}
+  - component: {fileID: 7243514117582216515}
+  - component: {fileID: 8503723537268388030}
+  - component: {fileID: 8564930571103079588}
+  m_Layer: 5
+  m_Name: WP4
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987821557346392543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9053162182127673636}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9999881, z: -0, w: -0.0048833084}
+  m_LocalPosition: {x: -82.9, y: 0, z: -49.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.56, z: 0}
+--- !u!65 &7243514117582216515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9053162182127673636}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8503723537268388030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9053162182127673636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAICar: {fileID: 0}
+  Type: 1
+  speed: 0
+  acceleration: -2
+  BlinkerState: 0
+  jerk: -2
+  causeToYield: 0
+  EyeContactWhileYielding: 0
+  EyeContactAfterYielding: 0
+  yieldTime: 0
+  brakingAcceleration: -2
+  YieldingEyeContactSince: 0
+  YieldingEyeContactUntil: 0
+  customBehaviourData: []
+--- !u!114 &8564930571103079588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9053162182127673636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
+--- !u!1 &9100580946046960798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4118803857372393005}
+  - component: {fileID: 1317875422267919317}
+  - component: {fileID: 3232367878194671365}
+  - component: {fileID: 6440300775752684148}
+  m_Layer: 5
+  m_Name: WP1 (3)
+  m_TagString: WP
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4118803857372393005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100580946046960798}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.70632726, z: -0, w: 0.7078855}
+  m_LocalPosition: {x: 6.9, y: 0, z: -25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2986274597394354450}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.874, z: 0}
+--- !u!65 &1317875422267919317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100580946046960798}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.25, y: 4, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3232367878194671365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100580946046960798}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aafac7d9fa55df845bcba1182540f596, type: 3}
@@ -2374,6 +2375,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &6440300775752684148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100580946046960798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7938a7098ba0a73409ec90ff7ec5bbbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1001 &258155327127519365
 PrefabInstance:
   m_ObjectHideFlags: 0
