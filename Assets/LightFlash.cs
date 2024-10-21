@@ -61,7 +61,7 @@ public class LightFlash : MonoBehaviour
     public void flash()
     {
         // Start the breathing effect
-        StartCoroutine(BreathingBloomCoroutine(3.0f, 5)); // 4 second duration, repeat 5 times
+        StartCoroutine(BreathingBloomCoroutine(2.5f, 50)); // 4 second duration, repeat 5 times
     }
 
     private IEnumerator BreathingBloomCoroutine(float duration, int repetitions)
@@ -70,13 +70,14 @@ public class LightFlash : MonoBehaviour
     {
         float elapsedTime = 0.0f;
 
+        // Peak intensity phase: increase to peak and then decrease smoothly
         while (elapsedTime < duration)
         {
-            // Calculate the time factor for the breathing effect
+            // Calculate time factor for breathing effect
             float t = Mathf.Clamp01(elapsedTime / duration);
 
-            // Calculate the bloom intensity based on a sine wave for smooth breathing
-            float intensity = baseIntensity + 2 * Mathf.Sin(t * Mathf.PI * frequency) * amplitude;
+            // Calculate bloom intensity based on sine wave for smooth breathing
+            float intensity = baseIntensity + Mathf.Sin(t * Mathf.PI * frequency) * amplitude;
 
             // Update the bloom intensity
             if (bloomLayer != null)
@@ -89,14 +90,34 @@ public class LightFlash : MonoBehaviour
             yield return null; // Wait for the next frame
         }
 
-        // Reset the intensity after each cycle
+        // Fade out phase: slowly reduce intensity to zero
+        elapsedTime = 0.0f;
+        float fadeDuration = 1.5f; // Duration of the fade out phase
+
+        while (elapsedTime < fadeDuration)
+        {
+            // Calculate how far we are into the fade
+            float t = elapsedTime / fadeDuration;
+
+            // Smoothly interpolate from the current intensity to zero
+            if (bloomLayer != null)
+            {
+                bloomLayer.intensity.value = Mathf.Lerp(bloomLayer.intensity.value, 0.0f, t);
+            }
+
+            // Increment elapsed time
+            elapsedTime += Time.deltaTime;
+            yield return null; // Wait for the next frame
+        }
+
+        // After the fade-out phase, set bloom intensity to exactly zero (optional safety measure)
         if (bloomLayer != null)
         {
-            bloomLayer.intensity.value = baseIntensity; // Reset to base intensity after breathing
+            bloomLayer.intensity.value = 0.0f;
         }
 
         // Optional: Add a delay between repetitions if you want to pause between cycles
-        yield return new WaitForSeconds(0.5f); // 0.5 second pause between cycles (adjust as needed)
+        yield return new WaitForSeconds(0.0f); // 0.5 second pause between cycles (adjust as needed)
     }
 }
 }
