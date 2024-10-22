@@ -24,7 +24,7 @@ public class VibrationBehaviour : MonoBehaviour
         Debug.Log("entered script vibration 2");
         //SpeedSettings.speed = 0;
 
-        SpriteHMI_DASH HMIScript = HMIStatic.GetComponent<SpriteHMI_DASH>();
-        HMIScript.Display(HMIState.DASH);
+        //SpriteHMI_DASH HMIScript = HMIStatic.GetComponent<SpriteHMI_DASH>();
+        //HMIScript.Display(HMIState.DASH);
     }
 }

@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 7771050348308231796}
   - component: {fileID: 7231046340181749355}
   - component: {fileID: 401394626519558489}
+  - component: {fileID: 6148386275510746672}
   m_Layer: 5
   m_Name: WP3
   m_TagString: WP
@@ -532,6 +533,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &6148386275510746672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819862720792336123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &1839113331672182294
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +638,7 @@ GameObject:
   - component: {fileID: 8197859467278263897}
   - component: {fileID: 7405984909471701299}
   - component: {fileID: 596900436638659062}
+  - component: {fileID: 953135132981677288}
   m_Layer: 5
   m_Name: WP12
   m_TagString: WP
@@ -703,6 +718,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50cc99f9b84bcf84cb6f88fdf74721c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
+--- !u!114 &953135132981677288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2298566570086684913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b050f1329559624489ddbc82cbe6c506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}
@@ -1276,7 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7f69c8a9c7414881b8da952c32ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reasonForActivation: visual
+  reasonForActivation: breathing+visual+verbal
 --- !u!1 &4804099676473936734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,7 +2093,6 @@ GameObject:
   - component: {fileID: 904597661852818990}
   - component: {fileID: 3063505109330676834}
   - component: {fileID: 1433982501746423936}
-  - component: {fileID: 7674903890882539906}
   m_Layer: 5
   m_Name: WP4
   m_TagString: WP
@@ -2135,19 +2162,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &7674903890882539906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652588268182587367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
 --- !u!1 &8240082910674718173
 GameObject:
   m_ObjectHideFlags: 0

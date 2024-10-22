@@ -7,7 +7,9 @@ using System.IO;
 public class ReactionTimeTracker : MonoBehaviour
 {
     public KeyCode reactionKey = KeyCode.LeftArrow; // Key to stop the timer
-    public KeyCode reactionKey2 = KeyCode.RightArrow; //Second key to stop the timer
+    public KeyCode reactionKey2 = KeyCode.RightArrow;
+    public KeyCode reactionKey3 = KeyCode.DownArrow;
+    public KeyCode reactionKey4 = KeyCode.UpArrow;//Second key to stop the timer
     private float startTime; // Time when the visual cue appears
     private bool isTiming = false; // To track if the timer is running
     private string filePath; // Path to save the data
@@ -22,7 +24,7 @@ public class ReactionTimeTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isTiming && (Input.GetKeyDown(reactionKey) || Input.GetKeyDown(reactionKey2)))
+        if (isTiming && (Input.GetKeyDown(reactionKey) || Input.GetKeyDown(reactionKey2) || Input.GetKeyDown(reactionKey3) || Input.GetKeyDown(reactionKey4)))
         {
             StopTimer();
         }

@@ -46,7 +46,7 @@ public class HMIManager : MonoBehaviour
     //host GUI displaying controls for all HMI present in the game session
     public void DoHostGUI(Host host)
     {
-        for (int i = 0; i < _hmis.Count; i++)
+        /*for (int i = 0; i < _hmis.Count; i++)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label($"eHMI {i}:");
@@ -69,6 +69,7 @@ public class HMIManager : MonoBehaviour
 
             GUILayout.EndHorizontal();
         }
+        */
 	}
 
     //hmi syncing message

@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 7846369399875927504}
   - component: {fileID: 6060126857568338130}
   - component: {fileID: 3206928650599748384}
+  - component: {fileID: 5438145622157558630}
   m_Layer: 5
   m_Name: WP12
   m_TagString: WP
@@ -383,6 +384,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50cc99f9b84bcf84cb6f88fdf74721c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
+--- !u!114 &5438145622157558630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516100446373165456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b050f1329559624489ddbc82cbe6c506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}
@@ -1089,6 +1103,7 @@ GameObject:
   - component: {fileID: 5926736411358050413}
   - component: {fileID: 6117958288531409966}
   - component: {fileID: 538913764313847396}
+  - component: {fileID: 5863424749898589871}
   m_Layer: 5
   m_Name: WP3
   m_TagString: WP
@@ -1158,6 +1173,19 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
+--- !u!114 &5863424749898589871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066783650299186947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carAI: {fileID: 0}
 --- !u!1 &4075664832381523837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,7 +1905,6 @@ GameObject:
   - component: {fileID: 1952817734026585488}
   - component: {fileID: 1698304720027343714}
   - component: {fileID: 4665428451694089111}
-  - component: {fileID: 5731268724432084562}
   m_Layer: 5
   m_Name: WP4
   m_TagString: WP
@@ -1947,19 +1974,6 @@ MonoBehaviour:
   YieldingEyeContactSince: 0
   YieldingEyeContactUntil: 0
   customBehaviourData: []
---- !u!114 &5731268724432084562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8080193748378143857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f640adee160ca044b2bf95fca6f6fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carAI: {fileID: 0}
 --- !u!1 &8093974356790414766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2068,7 @@ GameObject:
   - component: {fileID: 1484609796165770104}
   - component: {fileID: 8203504654815341301}
   - component: {fileID: 7260443583150294625}
+  - component: {fileID: 7910702458808184595}
   m_Layer: 5
   m_Name: WP2
   m_TagString: WP
@@ -2148,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c7f69c8a9c7414881b8da952c32ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reasonForActivation: visual
+  reasonForActivation: visual+verbal+haptic
 --- !u!114 &7260443583150294625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2162,6 +2177,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carAI: {fileID: 0}
+--- !u!114 &7910702458808184595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798896864046403622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9eda6b7fb7d99845a436e6da818293c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8934372779342735599
 GameObject:
   m_ObjectHideFlags: 0
